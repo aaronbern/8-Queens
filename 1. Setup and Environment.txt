@@ -1,0 +1,54 @@
+1. Setup and Environment:
+
+Set up a shared GitHub repository for code collaboration.
+Ensure everyone has access to the Google Doc for project documentation.
+Confirm the required libraries and tools (OpenCV, Keras, TensorFlow, YOLO).
+
+2. Data Preparation:
+
+Collect and prepare a dataset for training YOLO (e.g., a sprite sheet or custom video footage).
+Annotate the dataset with bounding boxes and class labels if not already done.
+Split the dataset into training, validation, and test sets.
+3. YOLO Integration:
+
+
+Implement YOLO for object detection.
+Train YOLO on the prepared dataset.
+Test YOLO to ensure accurate object detection.
+
+4. Data Generator:
+
+Develop a Python class (DataGenerator) to handle video frames and extract object data.
+Initialize with video_path.
+Implement next() method to return:
+Object Class
+Bounding Box Width (BoxW)
+Bounding Box Height (BoxH)
+Bounding Box Center (BoxCenter)
+Decide if the generator should label objects consistently across frames or leave that to the RL agent.
+
+5. Reinforcement Learning (RL) Agent:
+
+Design the RL model architecture.
+Define the reward function for accurate trajectory prediction.
+Implement the RL agent to process data from the DataGenerator.
+Train the RL agent using the YOLO output.
+Evaluate and refine the RL agent’s performance.
+
+6. Integration and Testing:
+
+Integrate YOLO with the RL agent.
+Test the combined system on various videos to predict object trajectories.
+Fine-tune the system for better accuracy and performance.
+
+7. Documentation and Reporting:
+
+Document the code and processes thoroughly.
+Prepare a project report detailing the methodology, implementation, and results.
+Create a presentation for the final project demonstration.
+
+8. Additional Tasks:
+
+Review and incorporate any feedback from Anthony.
+Assign specific roles and tasks to each team member to ensure balanced workload.
+Schedule regular meetings to track progress and address any issues.
